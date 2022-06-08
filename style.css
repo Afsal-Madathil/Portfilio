@@ -446,6 +446,7 @@ padding-bottom: 5rem;
     padding-bottom: 2rem;
     position: relative;
     z-index: 111;
+    
 }
 
 .btn.btn-Im {
@@ -532,6 +533,7 @@ padding-bottom: 5rem;
         position: fixed;
         top: 10%;
         right: 20px;
+        z-index: 9999;
     }
 
     .text {
@@ -547,9 +549,28 @@ padding-bottom: 5rem;
 
     .About_Image {
         color: #000;
-        padding-top: 50px;
-        padding-left: 105px;
+        padding-top: 0px;
+        padding-left: 30px;
     }
+    .Contact_image img {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        z-index: 111;
+        width: 100%;
+    }
+    .btn.btn-Im {
+        background-color: #13c0e5;
+        color: white;
+        padding: 5px 32px;
+        bordr-radius: 25px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 1rem;
+        position: absolute;
+        z-index: 222;
+        left: 10rem;
 }
 
 @media only screen and (max-width: 1022px) {
