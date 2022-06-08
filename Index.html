@@ -62,7 +62,7 @@
   <div class="About_Header">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="First_title">About</h2>
+        <h2 class="First_title">ABOUT ME</h2>
         <span class="heart"><img src="Image/add.png" alt=""></span>
       </div>
     </div>
@@ -73,8 +73,8 @@
         <div class="About_Text">
           <h3> A big <span>Hello</span></h3>
           <h1>Muhammed Afsal</h1>
-          <h5>As a <span>Web Designer</span> From Kerala</h5>
-          <p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+          <h5>Am a <span>UI Designer</span> From Kerala</h5>
+          <p>Hello there! I'm a UI designer, and I'm very passionate and dedicated to my work.I am a very enthusiastic, determinent & hardworking person and I like to work in a team which helps me to look at the same thing in a renewed way.</p>
           <a href="Image/Resume --- .jpg" download ><button type="button" class="btn btn-light">Downlode CV</button></a>
         </div>
       </div>
@@ -185,10 +185,69 @@
 </div>
 </section>
 <!--Services Section-->
+<!--Skill Section-->
+<section class="section skills" id="section_16">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="85">
+          <h5 class="skill-title">Photoshop</h5>
+          <span class="skill-percent">85%</span>
+          <div class="skill-bar" style="background-color: rgb(0, 136, 0);"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="80">
+          <h5 class="skill-title">V S Code</h5>
+          <span class="skill-percent">80%</span>
+          <div class="skill-bar" style="background-color: rgb(233, 155, 10);"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="83">
+          <h5 class="skill-title">Html5</h5>
+          <span class="skill-percent">83%</span>
+          <div class="skill-bar" style=" background-color: rgb(235, 10, 186);"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="83">
+          <h5 class="skill-title">Css3</h5>
+          <span class="skill-percent">83%</span>
+          <div class="skill-bar" style="background-color: rgb(204, 0, 0);"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="75">
+          <h5 class="skill-title">Javascript</h5>
+          <span class="skill-percent">75%</span>
+          <div class="skill-bar" style="background-color: rgb(0, 0, 136);"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill" data-percent="80">
+          <h5 class="skill-title">Bootstrap</h5>
+          <span class="skill-percent">80%</span>
+          <div class="skill-bar" style="background-color: rgb(136, 0, 84);"></div>
+        </div>
+      </div>
+    </div>
+   <!-- <button class="btn btn-primary" onclick="$(window).scroll()"></button> -->
+  </div>
+ 
+</section>
+<!--Skill Section-->
 <!--Contact Section-->
 <section id="Contact">
 <div class="Contact_section">
-  <h2>Contact Me</h2>
+  <h2>CONTACT ME</h2>
   <div class="container-fluid">
 
     <div class="row">
@@ -241,6 +300,41 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
-</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script> 
+<script>
+    var $win = $(window);
+var $skills = $('.skills');
+$win.on('scroll', function() {
+  var winHeight = $win.height();
+  var scrollAmount = $win.scrollTop() + winHeight;
+  var skillsPos = $skills.offset().top;
+  var skillsHeight = $skills.height();
+  var showed = false;
+  var hidden = false;
+  var inscreen = (scrollAmount > (skillsPos + skillsHeight - 100) && scrollAmount < (skillsPos + skillsHeight + winHeight));
+  if (inscreen && !showed) {
+    $('.skill').each(function() {
+      var $this = $(this);
+      var percent = parseInt($this.attr('data-percent'));
+      $this.children('.skill-bar').width($this.width() * percent / 100);
+      $this.children('.skill-percent').html(percent + '%');
+    });
+    showed = true;
+    hidden = false;
+  } else if (!(inscreen && hidden)) {
+    $('.skill').each(function() {
+      var $this = $(this);
+      $this.children('.skill-bar').width(0);
+    });
+    showed = false;
+    hidden = true;
+  }
+});
+  </script>
+  </body>
 </html>
