@@ -17,7 +17,7 @@ a.nav-link{
 } */
 
 .bg {
-    background-image: url(Image/Banner--A.jpg);
+    background-image: url(assets/image/Banner--A.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ h2.First_title {
 }
 
 .wrap {
-    background-image: url(Image/Service-image.jpg);
+    background-image: url(assets/image/Service-image.jpg);
     background-size: cover;
     
     background-attachment: fixed;
@@ -372,7 +372,7 @@ h2.First_title {
 
 .section{
 
-    background-image: url(Image/Service-image.jpg);
+    background-image: url(assets/image/Service-image.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -429,8 +429,8 @@ padding-bottom: 5rem;
 }
 .Contact_section {
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .Contact_section h2 {
