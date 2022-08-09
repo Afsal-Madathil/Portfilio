@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afsal</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link href="https://fonts.googleapis.com2?family=roboto&display" rel="stylesheet">
  
     <link rel="shortcut icon" type="image/png" href="assets/image/favicon.png" />
+    
+    <link rel="stylesheet" href="css/animate.css">
     
 </head>
 <body>
@@ -19,17 +21,17 @@
 <!--Banner Section-->
 <section id="Banner">
   <div class="title">
-    <img src="assets/image/logo-A.png" alt="">
+    <img class="animate__animated animate__fadeInDownBig" src="assets/image/logo-A.png" alt="">
   </div>
     <div class="bg">
     <div class="text">
-    <h1><span>LET'S BUILD </span>SOMETHING GREAT<br/> TOGETHER</h1>
-    <h3>I'm a web designer based in <span>#India</span> I make the visual for web to be more interactive</h3>
+    <h1 class="wow animate__animated animate__fadeInRight" data-wow-delay="0.1s"><span>LET'S BUILD </span>SOMETHING GREAT<br/> TOGETHER</h1>
+    <h3 class="wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">I'm a web designer based in <span>#India</span> I make the visual for web to be more interactive</h3>
   </div>
 </div>
 </section>
 
-<div class="wrapper">
+<div class="wrapper animate__animated animate__fadeInUpBig">
   <ul class="menu">
     <li class="list_item">
       <a class="home fa fa-home fa-fw" href="#Banner">
@@ -63,7 +65,9 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="First_title">ABOUT ME</h2>
-        <span class="heart"><img src="assets/image/add.png" alt=""></span>
+        <span class="heart_hl"></span>
+        <span class="heart_bl"></span>
+        <!-- <span class="heart"><img src="assets/image/add.png" alt=""></span> -->
       </div>
     </div>
   </div>
@@ -71,15 +75,15 @@
     <div class="row">
       <div class="col-md-6">
         <div class="About_Text">
-          <h3> A big <span>Hello</span></h3>
-          <h1>Muhammed Afsal</h1>
-          <h5>Am a <span>UI Designer</span> From Kerala</h5>
-          <p>Hello there! I'm a UI designer, and I'm very passionate and dedicated to my work.I am a very enthusiastic, determinent & hardworking person and I like to work in a team which helps me to look at the same thing in a renewed way.</p>
-          <a href="assets/image/Resume --- .jpg" download ><button type="button" class="btn btn-light">Downlode CV</button></a>
+          <h3 class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s"> A big <span>Hello</span></h3>
+          <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">Muhammed Afsal</h1>
+          <h5 class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Am a <span>UI Designer</span> From Kerala</h5>
+          <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">Hello there! I'm a UI designer, and I'm very passionate and dedicated to my work.I am a very enthusiastic, determinent & hardworking person and I like to work in a team which helps me to look at the same thing in a renewed way.</p>
+          <a href="assets/image/Resume --- .jpg" download ><button type="button" class="btn btn-light">Download CV</button></a>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="About_Image"><img src="assets/image/Profile.png" alt="Profile"></div>
+        <div class="About_Image wow animate__animated animate__fadeInRight"><img src="assets/image/Profile.png" alt="Profile"></div>
       </div>
     </div>
   </div>
@@ -98,7 +102,7 @@
   </div>
   <div class="wrap">
   <div class="container">
-    <div class="row Service_Main">
+    <div class="row Service_Main wow animate__animated animate__fadeInUpBig">
 
       <div class="col-md-4  col-12 Sarvices-A Service-W">
         <div class="service_icon">
@@ -107,20 +111,21 @@
         <h3>WEB <span>DESIGN</span> & UI</h3>
         <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites</p>
       </div>
-      <div class="col-md-4  col-12 Sarvices-A Service-R">
-        <div class="service_icon">
-          <i class="fa fa-palette"></i>
-        </div>
-        <h3>RESPONSIVE <span>DESIGN</span></h3>
-        <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
-      </div>
       <div class="col-md-4  col-12 Sarvices-A Service-V">
         <div class="service_icon">
-          <i class="fa fa-palette"></i>
+          <i class=" fa fa-palette "></i>
         </div>
         <h3>VISUAL <span>DESIGN</span></h3>
         <p>Visual design is the look and feel of the site, the personality if you will; the brand. Interaction design is the way people interact with your site.</p>
       </div>
+      <div class="col-md-4  col-12 Sarvices-A Service-R">
+        <div class="service_icon">
+          <i class="fa fa-desktop"></i>
+        </div>
+        <h3>RESPONSIVE <span>DESIGN</span></h3>
+        <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+      </div>
+      
     
       </div>
       
@@ -130,53 +135,50 @@
 </div>
 <div class="Service_Exper">
   <div class="container">
-  <div class="row">
-    <div class="col-mad-12">
-      <h2>EXPERT <span>IN</span></h2>
-    </div>
-  </div>
+    <div class="Exper_Title">
+      <h2>EXPERT IN</h2>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>
-        <h2>Photoshop</h2 >
-        <p>Adobe Photoshop is a raster graphics editor developed and published by adobe systems for mac os and windows</p>
+      <div class="Exp-First wow animate__animated animate__fadeInLeft">
+        
+        <h4>Photoshop</h4>
+        <p>Adobe Photoshop is a raster graphics editor and published by adobe systems for mac os and windows</p>
       </div> 
     </div>
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>
-        <h2>Html5</h2>
+      <div class="Exp-First wow animate__animated animate__fadeInLeft">
+        
+        <h4>Html5</h4>
         <p>Html5 is a markup language used for structuring and presenting content on the world wide web</p>
       </div> 
     </div>
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>      
-        <h2>Css3</h2>
+      <div class="Exp-First wow animate__animated animate__fadeInLeft">
+              
+        <h4>Css3</h4>
         <p>Css3 is a latest standard of css earlier versions css2. The main difference between css2 and css3 is follows.</p>
       </div> 
     </div>
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>       
-        <h2>Bootstrap</h2>
-        <p>Bootstrap is the most popular html, css, and js framework for developing responsive, mobile first projects on the web</p>
+      <div class="Exp-First wow animate__animated animate__fadeInRight">
+               
+        <h4>Bootstrap</h4>
+        <p>Bootstrap is the most popular html, css, and js framework for developing responsive.</p>
       </div> 
     </div>
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>     
-        <h2>Javascript</h2>
+      <div class="Exp-First wow animate__animated animate__fadeInRight">
+             
+        <h4>Javascript</h4>
         <p>Javascript editor can easily configure the working environment, leading to better productivity</p>
       </div> 
     </div>
     <div class="col-md-4 col-12 Exp_A">
-      <div class="Exp-First">
-        <div class="Exp-Second"></div>       
-        <h2>V S Code</h2>
+      <div class="Exp-First wow animate__animated animate__fadeInRight">
+               
+        <h4>V S Code</h4>
         <p>Visual Studio Code is a code editor redefined and optimized for building  web and cloud applications</p>
       </div> 
     </div>
@@ -186,62 +188,70 @@
 </section>
 <!--Services Section-->
 <!--Skill Section-->
-<section class="section skills" id="section_16">
+<section id="skill">
   <div class="container">
-
-    <div class="row">
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="85">
-          <h5 class="skill-title">Photoshop</h5>
-          <span class="skill-percent">85%</span>
-          <div class="skill-bar" style="background-color: rgb(0, 136, 0);"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="80">
-          <h5 class="skill-title">V S Code</h5>
-          <span class="skill-percent">80%</span>
-          <div class="skill-bar" style="background-color: rgb(233, 155, 10);"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="83">
-          <h5 class="skill-title">Html5</h5>
-          <span class="skill-percent">83%</span>
-          <div class="skill-bar" style=" background-color: rgb(235, 10, 186);"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="83">
-          <h5 class="skill-title">Css3</h5>
-          <span class="skill-percent">83%</span>
-          <div class="skill-bar" style="background-color: rgb(204, 0, 0);"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="75">
-          <h5 class="skill-title">Javascript</h5>
-          <span class="skill-percent">75%</span>
-          <div class="skill-bar" style="background-color: rgb(0, 0, 136);"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="skill" data-percent="80">
-          <h5 class="skill-title">Bootstrap</h5>
-          <span class="skill-percent">80%</span>
-          <div class="skill-bar" style="background-color: rgb(136, 0, 84);"></div>
-        </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container">
+      <div class="wrap_skill">
+        <img src="assets/image/skills.jpg" alt="">
       </div>
     </div>
-   <!-- <button class="btn btn-primary" onclick="$(window).scroll()"></button> -->
+    </div>
+    <div class="col-md-6">
+      <div class="progres">
+        <div class="progers_ph">
+        <p>Photoshop</p>
+      </div>
+      <div class="skill_bars wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s" style="width: 100%;">
+        <span>90%</span>   
+        <div class="Skill_bar wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s" style="width: 90%; margin-bottom: 1rem"></div>
+      </div>                      
+    </div>
+
+    <div class="progres">
+      <div class="progers_ph">
+      <p>Html 5 </p>
+    </div>
+    <div class="skill_bars wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s" style="width: 100%;">
+      <span>85%</span>   
+      <div class="Skill_bar wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s" style="width: 85%; margin-bottom: 1rem;"></div>
+    </div>                      
   </div>
- 
+
+  <div class="progres">
+    <div class="progers_ph">
+    <p>Css 3</p>
+  </div>
+  <div class="skill_bars wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s" style="width: 100%;">
+    <span>85%</span>   
+    <div class="Skill_bar wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s" style="width: 85%; margin-bottom: 1rem"></div>
+  </div>                      
+</div>
+
+
+<div class="progres">
+  <div class="progers_ph">
+  <p>Bootstrap</p>
+</div>
+<div class="skill_bars wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s" style="width: 100%;">
+  <span>80%</span>   
+  <div class="Skill_bar wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s" style="width: 80%; margin-bottom: 1rem"></div>
+</div>                      
+</div>
+
+<div class="progres">
+  <div class="progers_ph">
+  <p>Javascript</p>
+</div>
+<div class="skill_bars wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" style="width: 100%;">
+  <span>75%</span>   
+  <div class="Skill_bar wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" style="width: 75%; margin-bottom: 1rem"></div>
+</div>                      
+</div>
+
+  </div>
+</div>
 </section>
 <!--Skill Section-->
 <!--Contact Section-->
@@ -252,13 +262,13 @@
 
     <div class="row">
       <div class="col-md-6 col-12 Contact-img">
-        <div class="Contact_image">
+        <div class="Contact_image wow animate__animated animate__fadeInLeft">
           <a href="#Banner"><button class="btn btn-Im">Explore</button></a>
-          <img src="assets/image/Contact-image.jpg" alt="">
+          <img  src="assets/image/Contact-image.jpg" alt="">
         </div>
       </div>
       <div class="col-md-6 col-12">
-        <div class="Contact_Form">
+        <div class="Contact_Form wow animate__animated animate__fadeInUpBig">
           <form>
             <div class="form-group">
               <label for="formGroupExampleInput"></label>
@@ -289,7 +299,7 @@
 <div class="Section_Footer">
   <div class="cotainer">
   <div class="row">
-    <div class="col-12 Footer_Para">
+    <div class="col-12 Footer_Para wow animate__animated animate__fadeInRight">
       <span>© Muhammed Afsal. All Rights Reserved</span>
     </div>
   </div>
@@ -301,40 +311,13 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
-<script
-src="https://code.jquery.com/jquery-2.2.4.js"
-integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-crossorigin="anonymous"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+<script src="js/wow.min.js"></script>
 <script>
-    var $win = $(window);
-var $skills = $('.skills');
-$win.on('scroll', function() {
-  var winHeight = $win.height();
-  var scrollAmount = $win.scrollTop() + winHeight;
-  var skillsPos = $skills.offset().top;
-  var skillsHeight = $skills.height();
-  var showed = false;
-  var hidden = false;
-  var inscreen = (scrollAmount > (skillsPos + skillsHeight - 100) && scrollAmount < (skillsPos + skillsHeight + winHeight));
-  if (inscreen && !showed) {
-    $('.skill').each(function() {
-      var $this = $(this);
-      var percent = parseInt($this.attr('data-percent'));
-      $this.children('.skill-bar').width($this.width() * percent / 100);
-      $this.children('.skill-percent').html(percent + '%');
-    });
-    showed = true;
-    hidden = false;
-  } else if (!(inscreen && hidden)) {
-    $('.skill').each(function() {
-      var $this = $(this);
-      $this.children('.skill-bar').width(0);
-    });
-    showed = false;
-    hidden = true;
-  }
-});
-  </script>
+new WOW().init();
+</script>
+
   </body>
 </html>
